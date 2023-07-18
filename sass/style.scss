@@ -1,0 +1,60 @@
+@import './nav/nav.scss';
+@import './vars.scss';
+@import './sectionWelcome/sectionWelcome.scss';
+@import './sectionRating/sectionRating.scss';
+@import './sectionDemo/sectionDemo.scss';
+@import './sectionDemo2/sectionDemo-2.scss';
+@import './sectionBenefits/sectionBenefits.scss';
+@import './footer/footer.scss';
+@import './sideMenu/sideMenu.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    overflow: hidden;
+}
+
+.main-header {
+    background: $main-color;
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-header-figure {
+    position: absolute;
+    right: 4rem;
+    top: -5px;
+    z-index: 1;
+
+    .main-header__circle-1 {
+        position: absolute;
+        color: $svg-color;
+        transform: translateX(10rem) translateY(-4.2rem) rotate(-91deg)
+    }
+
+    .main-header__circle-2 {
+        color: $svg-color;
+    }
+    
+}
+
+
+@media (max-width:750px) {
+    .main-header-figure {
+        position: absolute;
+        right: 0;
+        top: -9%;
+        z-index: 1;
+
+    }
+}

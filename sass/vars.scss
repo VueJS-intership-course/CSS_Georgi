@@ -1,0 +1,27 @@
+$main-color: #381DF6;
+$color-txt: #FFF;
+$svg-color: #ffffff48;
+$star-rating-color: #F3AD3E;
+$bullet-color: #371CF5;
+$section-demo-figures-color: #351cf536;
+$section-text-black:#0D0A10;
+
+@mixin bullet-dots() {
+    content: "\2022";
+    color: #381DF6;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    font-size: 28px;
+    margin-left: -1em;
+}
+
+@mixin bullet-dots-responsive() {
+    content: "\2022";
+    color: #381DF6;
+    font-weight: bold;
+    display: inline-block;
+    width: 0.7em;
+    font-size: 20px;
+    margin-left: -0.5em;
+}
